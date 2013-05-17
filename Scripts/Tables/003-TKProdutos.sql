@@ -1,0 +1,15 @@
+IF NOT EXISTS(SELECT NAME FROM SYSOBJECTS WHERE NAME='TKProdutos')
+BEGIN 
+	CREATE TABLE TKProdutos(
+		ProdCodigo		INT NOT NULL IDENTITY,
+		ProdNome		VARCHAR(60),
+		ProdSigla		VARCHAR(20),
+		ProdDescricao	VARCHAR(MAX),
+		ProdImage		VARCHAR(255),
+		Created			DATETIME,
+		Modified		DATETIME,
+
+		CONSTRAINT PK_ProdCodigo PRIMARY KEY (ProdCodigo)
+	);
+END;
+GO

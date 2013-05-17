@@ -1,0 +1,14 @@
+IF NOT EXISTS(SELECT NAME FROM SYSOBJECTS WHERE NAME='TKTickets')
+BEGIN
+	CREATE TABLE TKTickets(
+		TkCodigo			INT NOT NULL IDENTITY,
+		CliCodigo			INT NOT NULL,
+		ProdCodigo			INT NOT NULL,
+		TkDescricao			TEXT,
+		TkCreated			DATETIME,
+		TkModified			DATETIME
+
+		CONSTRAINT PK_TkCodigo PRIMARY KEY (TkCodigo)
+	);
+END;
+GO

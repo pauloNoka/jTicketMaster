@@ -1,0 +1,17 @@
+IF NOT EXISTS(SELECT NAME FROM SYSOBJECTS WHERE NAME='TKTicketsStatus')
+BEGIN
+	CREATE TABLE TKTicketsStatus(
+		StCodigo			INT NOT NULL IDENTITY,
+		TkCodigo			INT NOT NULL,
+		DsCodigo			INT NOT NULL,
+
+		CONSTRAINT PK_StCodigo PRIMARY KEY (StCodigo),
+
+		CONSTRAINT FK_TkCodigo_TicketStatus FOREIGN KEY(TkCodigo)
+			REFERENCES TKTickets(TkCodigo),
+
+		CONSTRAINT FK_DsCodigo_TicketStatus FOREIGN KEY(DsCodigo)
+			REFERENCES TKStatusDescricao(DsCodigo)
+	);
+END;
+GO
