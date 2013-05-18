@@ -69,7 +69,7 @@
   <div class="span2 center">
     <div class="stat-box text-blue">
       <i class="icon-hand-right icon-large"></i>
-      <span class="count">204</span>
+      <span class="count">204  -</span>
       <span class="stat-text">Orders</span>
     </div>
   </div>
