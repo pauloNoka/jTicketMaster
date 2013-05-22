@@ -72,8 +72,8 @@
   <td><%=c.getCliEmail()%></td>
   <td><%=c.getCliTelefone()%></td>
   <td>
-  <a href="AlterClient?id=<%=c.getCliCodigo()%>" title="Clique para alterar os dados do cliente"><i class="icon-pencil"></i></a>
-  <a href="DelClient?id=<%=c.getCliCodigo()%>" title="Clique para deletar o cliente"><i class="icon-remove-circle"></i></a>
+  <a href="ListOneClient?id=<%=c.getCliCodigo()%>" title="Clique para alterar os dados do cliente"><i class="icon-pencil"></i></a>
+  <a href="DeleteClient?id=<%=c.getCliCodigo()%>" title="Clique para deletar o cliente"><i class="icon-remove-circle"></i></a>
   </td>
 </tr>
 

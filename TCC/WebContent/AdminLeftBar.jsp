@@ -40,7 +40,7 @@
     </li>
 
     <!-- Inicio -->
-    <li class="active">
+    <li class="">
       <a href="index.jsp">
           <span class="icon">
             <i class="icon-dashboard"></i>
