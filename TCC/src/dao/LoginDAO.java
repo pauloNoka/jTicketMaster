@@ -28,13 +28,13 @@ public class LoginDAO {
 		
 		if(rs.next()){
 			Login = new Login();
-			
+			/*
 			Login.setCodigo_cliente(codigo);
 			Login.setNome(rs.getString("nome"));
 			Login.setEndereco(rs.getString("endereco"));
 			c.setCidade(rs.getString("cidade"));
 			c.setSexo(rs.getString("sexo"));
-			c.setRenda(rs.getDouble("renda"));
+			c.setRenda(rs.getDouble("renda"));*/
 			
 			
 		}
@@ -44,9 +44,8 @@ public class LoginDAO {
 		e.printStackTrace();
 	}
 	
-			return c;
+			//return c;
 	
-}
 		
 		return false;	
 		

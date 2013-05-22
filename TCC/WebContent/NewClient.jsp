@@ -40,7 +40,7 @@
 			  		<div class="span12">
 						<div class="box bordered">
 			        		<div class="box inner light-gray">
-								<form>
+								<form method="POST" action="NewClient">
 					
 						<div class="row-fluid">
 					          <div class="span6">
@@ -101,16 +101,16 @@
 									  <div class="input full-width">
 									    
 									    <select name="Estado" style="width:100%">
-										  <option>Selecione o Estado</option>
-										  <option>São Paulo</option>
+										  <option value="0">Selecione o Estado</option>
+										  <option value="1">São Paulo</option>
 										</select>
 									  </div>
 									  
 									  <div class="input full-width">
 									    
 									    <select name="Cidade" style="width:100%">
-										  <option>Selecione a Cidade</option>
-										  <option>Tupã</option>
+										  <option value="0">Selecione a Cidade</option>
+										  <option value="1">Tupã</option>
 										</select>
 									  </div>
 									 

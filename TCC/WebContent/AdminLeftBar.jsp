@@ -72,7 +72,7 @@
           </a>
         </li>
         <li class="">
-          <a href="ListClient.jsp">
+          <a href="ListClient">
               Listar
           </a>
         </li>
