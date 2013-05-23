@@ -15,11 +15,9 @@ public class Cliente {
 	private String CliEndereco;
 	private int CliNumeroEndereco;
 	private String CliBairro;
-	
 	private int IdCidade;
 	private String CliEmail;
 	private String CliCep;
-	private String CliLogin;
 	private String CliSenha;
 	
 	
@@ -101,6 +99,7 @@ public class Cliente {
 	public void setCliBairro(String cliBairro) {
 		CliBairro = cliBairro;
 	}
+	
 	public int getIdCidade() {
 		return IdCidade;
 	}
@@ -118,12 +117,6 @@ public class Cliente {
 	}
 	public void setCliCep(String cliCep) {
 		CliCep = cliCep;
-	}
-	public String getCliLogin() {
-		return CliLogin;
-	}
-	public void setCliLogin(String cliLogin) {
-		CliLogin = cliLogin;
 	}
 	public String getCliSenha() {
 		return CliSenha;

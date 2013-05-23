@@ -1,8 +1,6 @@
 package servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,22 +12,22 @@ import dao.ClienteDAO;
 import models.Cliente;
 
 /**
- * Servlet implementation class NewClient
+ * Servlet implementation class AlterClient
  */
-@WebServlet("/NewClient")
-public class NewClient extends HttpServlet {
+@WebServlet("/AlterClient")
+public class AlterClient extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public NewClient() {
+    public AlterClient() {
         super();
         // TODO Auto-generated constructor stub
     }
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+	
 		//Instancia a classe cliente
 		Cliente cliente = new Cliente();	
 		
@@ -47,6 +45,7 @@ public class NewClient extends HttpServlet {
 		int Numero			  = Integer.parseInt(request.getParameter("Numero"));
 		String Bairro 		  = request.getParameter("Bairro");
 		String Cep            = request.getParameter("Cep");
+		int Estado 			  = Integer.parseInt(request.getParameter("Estado"));
 		int Cidade 			  = Integer.parseInt(request.getParameter("Cidade"));
 		String Email          = request.getParameter("Email");
 		String DataNascimento = request.getParameter("DataNascimento");
@@ -64,28 +63,24 @@ public class NewClient extends HttpServlet {
 		cliente.setCliNumeroEndereco(Numero);
 		cliente.setCliBairro(Bairro);
 		cliente.setCliCep(Cep);
+		cliente.setIdEstado(Estado);
 		cliente.setIdCidade(Cidade);
 		cliente.setCliEmail(Email);
 		cliente.setCliNascimento(DataNascimento);
 		cliente.setCliRg(Rg);
 		cliente.setCliCpf(Cpf);
-		cliente.setCliCnpj(Cnpj);		 
+		cliente.setCliCnpj(Cnpj);
 		
-		//PrintWriter out = response.getWriter();
-		
-		//out.write("IdCidade:"+cliente.getCliCpf());
-		
-		/**/ //Instancia a classe ClienteDAO
+		//Instancia a classe ClienteDAO
 		ClienteDAO clienteDao = new ClienteDAO();
-		
+				
 		//Passa o objeto cliente para a classe DAO inserir os dados no BD
-		clienteDao.insert(cliente);
-		
+		clienteDao.update(cliente);
+				
 		//Redireciona para ListClient.jsp
-		String success = "cliente inserido com sucesso!";
+		String success = "cliente alterado com sucesso!";
 		request.setAttribute("success", success);
-		request.getRequestDispatcher("ListClient").forward(request, response);
-		/**/
+		request.getRequestDispatcher("ListClient.jsp").forward(request, response);
 		
 	}
 

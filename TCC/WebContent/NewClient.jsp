@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 	<%@ include file="AdminHeader.jsp" %> 	
@@ -100,17 +100,21 @@
 									  
 									  <div class="input full-width">
 									    
-									    <select name="Estado" style="width:100%">
+									    <select name="Estado" style="width:100%" onchange="getCidades(this, 'cidade');" id="estado" data-method="GET" data-href="GetEstados" >
 										  <option value="0">Selecione o Estado</option>
-										  <option value="1">São Paulo</option>
 										</select>
 									  </div>
+									  <script type="text/javascript">
+									  	$(document).ready(function(){
+									  		var element =  $('#estado');
+									  		getContent(element);
+									  	})
+									  </script>
 									  
 									  <div class="input full-width">
 									    
-									    <select name="Cidade" style="width:100%">
+									    <select name="Cidade" id="cidade" style="width:100%" data-method="GET" data-href="GetCidades?cod_estado=" disabled="disabled">
 										  <option value="0">Selecione a Cidade</option>
-										  <option value="1">Tupã</option>
 										</select>
 									  </div>
 									 

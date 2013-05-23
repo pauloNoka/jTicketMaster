@@ -31,10 +31,12 @@ public class GetEstados extends HttpServlet {
 	
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
 		ArrayList<Endereco> estados = endereco.getEstados();
+		response.setContentType ("application/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
+		out.print("<option value=\"0\">escolha um estado...</optiton>\r\n");
 		for(Endereco e : estados){
 			
-			String str = "<option value="+e.getEstado()+">"+e.getNomeEstado()+"</optiton>\r\n"; 
+			String str = "<option value=\""+e.getEstado()+"\">"+e.getNomeEstado()+"</optiton>\r\n"; 
 			out.print(str);
 			
 		}	
