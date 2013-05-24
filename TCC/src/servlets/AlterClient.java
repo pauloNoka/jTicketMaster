@@ -45,7 +45,6 @@ public class AlterClient extends HttpServlet {
 		int Numero			  = Integer.parseInt(request.getParameter("Numero"));
 		String Bairro 		  = request.getParameter("Bairro");
 		String Cep            = request.getParameter("Cep");
-		int Estado 			  = Integer.parseInt(request.getParameter("Estado"));
 		int Cidade 			  = Integer.parseInt(request.getParameter("Cidade"));
 		String Email          = request.getParameter("Email");
 		String DataNascimento = request.getParameter("DataNascimento");
@@ -63,7 +62,6 @@ public class AlterClient extends HttpServlet {
 		cliente.setCliNumeroEndereco(Numero);
 		cliente.setCliBairro(Bairro);
 		cliente.setCliCep(Cep);
-		cliente.setIdEstado(Estado);
 		cliente.setIdCidade(Cidade);
 		cliente.setCliEmail(Email);
 		cliente.setCliNascimento(DataNascimento);

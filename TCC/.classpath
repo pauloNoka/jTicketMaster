@@ -14,5 +14,8 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/Users/Vagner/Documents/Java/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Vagner/Documents/Java/commons-email-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Vagner/Documents/Java/mail-1.4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Vagner/Documents/Java/jaf-1.0.2/activation.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
