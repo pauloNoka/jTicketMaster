@@ -1,7 +1,7 @@
 package servlets;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,9 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import models.Cliente;
-import models.Endereco;
+
 import dao.ClienteDAO;
-import dao.EnderecoDAO;
 
 /**
  * Servlet implementation class AlterClient
@@ -35,17 +34,9 @@ public class ListOneClient extends HttpServlet {
 		
 		ClienteDAO clientedao = new ClienteDAO();
 		
-		EnderecoDAO endereco = new EnderecoDAO();
-		
 		Cliente lista = clientedao.ListOneClient(CliCodigo);
 		
-		ArrayList<Endereco> listaEstados = endereco.getEstados();
-		
-		ArrayList<Endereco> listaCidades = endereco.getCidades(lista.getIdEstado());
-		
 		request.setAttribute("rs", lista);
-		request.setAttribute("estados", listaEstados);
-		request.setAttribute("cidades", listaCidades);
 		request.getRequestDispatcher("AlterClient.jsp").forward(request, response);
 		
 		

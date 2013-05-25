@@ -10,32 +10,28 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import dao.EnderecoDAO;
-
 import models.Endereco;
 
 import dao.EnderecoDAO;
 
 /**
- * Servlet implementation class GetCidades
+ * Servlet implementation class GetEstados
  */
 @WebServlet("/GetEstados")
 public class GetEstados extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    EnderecoDAO endereco = new EnderecoDAO();
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+    private EnderecoDAO endereco = new EnderecoDAO();
+     
+	
     public GetEstados() {
         super();
-        // TODO Auto-generated constructor stub
+        
     }
 
 	
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
 		ArrayList<Endereco> estados = endereco.getEstados();
 		response.setContentType ("application/html; charset=UTF-8");
-		ArrayList<Endereco> estados = endereco.getCidades(cod_estado);
 		PrintWriter out = response.getWriter();
 		out.print("<option value=\"0\">escolha um estado...</optiton>\r\n");
 		for(Endereco e : estados){
@@ -44,6 +40,7 @@ public class GetEstados extends HttpServlet {
 			out.print(str);
 			
 		}	
+		
 	}
 
 }

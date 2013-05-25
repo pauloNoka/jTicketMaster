@@ -157,7 +157,6 @@ public class ClienteDAO {
 				c.setCliSexo(rs.getString("CliSexo"));
 				c.setCliTelefone(rs.getString("CliTelefone"));
 				c.setCliCelular(rs.getString("CliCelular"));
-				c.setCliEndereco(rs.getString("CliEndereco"));
 				c.setCliNumeroEndereco(rs.getInt("CliNumeroEndereco"));
 				c.setCliBairro(rs.getString("CliBairro"));
 				c.setCliCep(rs.getString("CliCep"));
