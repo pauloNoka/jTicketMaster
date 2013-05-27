@@ -16,6 +16,7 @@ public class Cliente {
 	private int CliNumeroEndereco;
 	private String CliBairro;
 	private int IdCidade;
+	private int IdEstado;
 	private String CliEmail;
 	private String CliCep;
 	private String CliSenha;
@@ -123,6 +124,12 @@ public class Cliente {
 	}
 	public void setCliSenha(String cliSenha) {
 		CliSenha = cliSenha;
+	}
+	public int getIdEstado() {
+		return IdEstado;
+	}
+	public void setIdEstado(int idEstado) {
+		IdEstado = idEstado;
 	}
 	
 	

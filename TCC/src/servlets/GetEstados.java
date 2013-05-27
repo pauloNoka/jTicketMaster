@@ -33,9 +33,8 @@ public class GetEstados extends HttpServlet {
 
 	
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
-		ArrayList<Endereco> estados = endereco.getEstados();
+    	ArrayList<Endereco> estados = endereco.getEstados();
 		response.setContentType ("application/html; charset=UTF-8");
-		ArrayList<Endereco> estados = endereco.getCidades(cod_estado);
 		PrintWriter out = response.getWriter();
 		out.print("<option value=\"0\">escolha um estado...</optiton>\r\n");
 		for(Endereco e : estados){

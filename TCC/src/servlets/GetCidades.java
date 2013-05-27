@@ -40,7 +40,7 @@ public class GetCidades extends HttpServlet {
 		out.print("<option value=\"0\">escolha uma cidade...</optiton>\r\n");
 		for(Endereco e : estados){
 			
-			String str = "<option value="+e.getEstado()+">"+e.getNomeEstado()+"</optiton>\r\n"; 
+			String str = "<option value="+e.getCidade()+">"+e.getNomeCidade()+"</optiton>\r\n"; 
 			out.print(str);
 			
 		}	

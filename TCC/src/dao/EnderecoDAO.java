@@ -28,7 +28,8 @@ public class EnderecoDAO {
 
 			while (rs.next()) {
 				end = new Endereco();
-
+//				System.out.println(rs.getInt("cod_estado"));
+//				System.out.println(rs.getString("nom_estado"));
 				end.setEstado(rs.getInt("cod_estado"));
 				end.setNomeEstado(rs.getString("nom_estado"));
 				ll.add(end);
@@ -63,8 +64,8 @@ public class EnderecoDAO {
 
 			while (rs.next()) {
 				end = new Endereco();
-//				System.out.println(rs.getInt("cod_cidade")+"\r\n");
-//				System.out.println(rs.getString("nom_cidade"));
+				System.out.println(rs.getInt("cod_cidade")+"\r\n");
+				System.out.println(rs.getString("nom_cidade"));
 				end.setCidade(rs.getInt("cod_cidade"));
 				end.setNomeCidade(rs.getString("nom_cidade"));
 				ll.add(end);

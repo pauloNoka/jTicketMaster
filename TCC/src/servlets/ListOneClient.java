@@ -40,7 +40,7 @@ public class ListOneClient extends HttpServlet {
 		Cliente lista = clientedao.ListOneClient(CliCodigo);
 		
 		ArrayList<Endereco> listaEstados = endereco.getEstados();
-		
+		System.out.println("IdEstado: "+lista.getIdEstado());
 		ArrayList<Endereco> listaCidades = endereco.getCidades(lista.getIdEstado());
 		
 		request.setAttribute("rs", lista);

@@ -133,7 +133,7 @@ public class ClienteDAO {
 					 "INNER JOIN estado AS TKEst "+
 					 "ON TKEst.cod_estado = TKCid.cod_estado "+
 					 "WHERE CliCodigo = ?";
-		
+		System.out.println(sql);
 		Conecta conecta = Conecta.getInstance();
 		Connection conexao = conecta.getConnection();
 		
@@ -162,6 +162,7 @@ public class ClienteDAO {
 				c.setCliBairro(rs.getString("CliBairro"));
 				c.setCliCep(rs.getString("CliCep"));
 				c.setIdCidade(rs.getInt("IdCidade"));
+				c.setIdEstado(rs.getInt("IdEstado"));
 				c.setCliEmail(rs.getString("CliEmail"));
 				c.setCliNascimento(rs.getString("CliNascimento"));
 				c.setCliRg(rs.getString("CliRg"));
