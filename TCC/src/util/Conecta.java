@@ -7,10 +7,10 @@ import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 
 public class Conecta {
 	private final static String USER="sa";
-	private final static String PASSWD="12345";
-	private final static String IP_SERVER="192.168.10.10";
+	private final static String PASSWD="pauloeli";
+	private final static String IP_SERVER="127.0.0.1";
 	private final static String INSTANCIA="SQLEXPRESS";
-	private final static String DB="Ticket";
+	private final static String DB="TicketMaster";
 	
 	Connection connection = null;
 	

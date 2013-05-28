@@ -23,7 +23,7 @@
 			        <span class="divider">/</span>
 			      </li>
 			      <li>
-			        <a class="crumb" href="NewClient.jsp">Cadastrar Cliente</a>
+			        <a class="crumb" href="NewFunc.jsp">Cadastrar Cliente</a>
 			        <span class="divider">/</span>
 			      </li>
 			    </ul>
@@ -40,20 +40,30 @@
 			  		<div class="span12">
 						<div class="box bordered">
 			        		<div class="box inner light-gray">
-								<form action="NewClient" method="post" name="NewClient" id="NewClient">
+								<form action="NewFunc" method="post" name="NewFunc" id="NewFunc">
 					
 						<div class="row-fluid">
 					          <div class="span6">
 					            <div class="padded">
 					              
 					              <div class="section-title">
-					                Cadastrando Clientes! *-*
+					                Cadastrando Funcionarios! *-*
 					              </div>
 					              
 					            <div class="vpadded">
 												  
+									   
+									   <div class="input full-width">
+									    
+									    <select name="TipoFunc" style="width:100%">
+										  <option value="0">Selecione o Tipo de Usuário</option>
+										  <option value="1">Administrador</option>
+										   <option value="2">Funcionario</option>
+										</select>
+									  </div>
+									  
 									  <div class="input full-width">
-									    <input type="text" name="Usuario" placeholder="Nome de UsuÃ¡rio">
+									    <input type="text" name="Usuario" placeholder="Nome de Usuário">
 									  </div>
 									  
 									  <div class="input full-width">
@@ -63,7 +73,7 @@
 									  <div class="input full-width">
 									    <input type="password" name="RepitaSenha" placeholder="Repita a Senha">
 									  </div>
-									  
+
 									  <div class="input full-width">
 									    <input type="text" name="NomeCompleto" placeholder="Nome Completo">
 									  </div>
@@ -139,9 +149,7 @@
 									    <input type="text" name="Cpf" placeholder="CPF">
 									  </div>
 									  
-									  <div class="input full-width">
-									    <input type="text" name="Cnjp" placeholder="CNPJ">
-									  </div>
+									  
 									
 										<input type="submit" class="btn light-blue inverse" name="Cadastrar" value="Cadastrar">
 								  
