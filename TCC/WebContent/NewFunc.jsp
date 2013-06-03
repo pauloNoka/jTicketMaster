@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 	<%@ include file="AdminHeader.jsp" %> 	
@@ -23,7 +23,7 @@
 			        <span class="divider">/</span>
 			      </li>
 			      <li>
-			        <a class="crumb" href="NewClient.jsp">Cadastrar Cliente</a>
+			        <a class="crumb" href="NewFunc.jsp">Cadastrar Cliente</a>
 			        <span class="divider">/</span>
 			      </li>
 			    </ul>
@@ -40,24 +40,30 @@
 			  		<div class="span12">
 						<div class="box bordered">
 			        		<div class="box inner light-gray">
-<<<<<<< HEAD
-								<form method="POST" action="NewClient">
-=======
-								<form action="NewClient" method="post" name="NewClient" id="NewClient">
->>>>>>> 6b367e763cecda902c8fb4596fe6e11ed7459c8f
+								<form action="NewFunc" method="post" name="NewFunc" id="NewFunc">
 					
 						<div class="row-fluid">
 					          <div class="span6">
 					            <div class="padded">
 					              
 					              <div class="section-title">
-					                Cadastrando Clientes! *-*
+					                Cadastrando Funcionarios! *-*
 					              </div>
 					              
 					            <div class="vpadded">
 												  
+									   
+									   <div class="input full-width">
+									    
+									    <select name="TipoFunc" style="width:100%">
+										  <option value="0">Selecione o Tipo de Usu·rio</option>
+										  <option value="1">Administrador</option>
+										   <option value="2">Funcionario</option>
+										</select>
+									  </div>
+									  
 									  <div class="input full-width">
-									    <input type="text" name="Usuario" placeholder="Nome de Usu√°rio">
+									    <input type="text" name="Usuario" placeholder="Nome de Usu·rio">
 									  </div>
 									  
 									  <div class="input full-width">
@@ -67,7 +73,7 @@
 									  <div class="input full-width">
 									    <input type="password" name="RepitaSenha" placeholder="Repita a Senha">
 									  </div>
-									  
+
 									  <div class="input full-width">
 									    <input type="text" name="NomeCompleto" placeholder="Nome Completo">
 									  </div>
@@ -112,33 +118,17 @@
 									  
 									  <div class="input full-width">
 									    
-<<<<<<< HEAD
-									    <select name="Estado" style="width:100%" onchange="getCidades(this, 'cidade');" id="estado" data-method="GET" data-href="GetEstados" >
-										  <option value="0">Selecione o Estado</option>
-=======
 									    <select name="Estado" style="width:100%">
 										  <option value="0">Selecione o Estado</option>
 										  <option value="1">S√£o Paulo</option>
->>>>>>> 6b367e763cecda902c8fb4596fe6e11ed7459c8f
 										</select>
 									  </div>
-									  <script type="text/javascript">
-									  	$(document).ready(function(){
-									  		var element =  $('#estado');
-									  		getContent(element);
-									  	})
-									  </script>
 									  
 									  <div class="input full-width">
 									    
-<<<<<<< HEAD
-									    <select name="Cidade" id="cidade" style="width:100%" data-method="GET" data-href="GetCidades?cod_estado=" disabled="disabled">
-										  <option value="0">Selecione a Cidade</option>
-=======
 									    <select name="Cidade" style="width:100%">
 										  <option value="0">Selecione a Cidade</option>
 										  <option value="1">Tup√£</option>
->>>>>>> 6b367e763cecda902c8fb4596fe6e11ed7459c8f
 										</select>
 									  </div>
 									 
@@ -159,9 +149,7 @@
 									    <input type="text" name="Cpf" placeholder="CPF">
 									  </div>
 									  
-									  <div class="input full-width">
-									    <input type="text" name="Cnjp" placeholder="CNPJ">
-									  </div>
+									  
 									
 										<input type="submit" class="btn light-blue inverse" name="Cadastrar" value="Cadastrar">
 								  
