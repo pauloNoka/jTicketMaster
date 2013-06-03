@@ -40,12 +40,8 @@
 			  		<div class="span12">
 						<div class="box bordered">
 			        		<div class="box inner light-gray">
-<<<<<<< HEAD
-								<form method="POST" action="NewClient">
-=======
+
 								<form action="NewClient" method="post" name="NewClient" id="NewClient">
->>>>>>> 6b367e763cecda902c8fb4596fe6e11ed7459c8f
-					
 						<div class="row-fluid">
 					          <div class="span6">
 					            <div class="padded">
@@ -111,15 +107,8 @@
 									  </div>
 									  
 									  <div class="input full-width">
-									    
-<<<<<<< HEAD
 									    <select name="Estado" style="width:100%" onchange="getCidades(this, 'cidade');" id="estado" data-method="GET" data-href="GetEstados" >
 										  <option value="0">Selecione o Estado</option>
-=======
-									    <select name="Estado" style="width:100%">
-										  <option value="0">Selecione o Estado</option>
-										  <option value="1">São Paulo</option>
->>>>>>> 6b367e763cecda902c8fb4596fe6e11ed7459c8f
 										</select>
 									  </div>
 									  <script type="text/javascript">
@@ -130,15 +119,8 @@
 									  </script>
 									  
 									  <div class="input full-width">
-									    
-<<<<<<< HEAD
 									    <select name="Cidade" id="cidade" style="width:100%" data-method="GET" data-href="GetCidades?cod_estado=" disabled="disabled">
 										  <option value="0">Selecione a Cidade</option>
-=======
-									    <select name="Cidade" style="width:100%">
-										  <option value="0">Selecione a Cidade</option>
-										  <option value="1">Tupã</option>
->>>>>>> 6b367e763cecda902c8fb4596fe6e11ed7459c8f
 										</select>
 									  </div>
 									 

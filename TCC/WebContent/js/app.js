@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var client;
 if (window.XMLHttpRequest) {
 	client = new window.XMLHttpRequest;
@@ -47,10 +46,9 @@ getCidades = function(e, targetId){
 	getContent(e, target);
 	
 };
-=======
 $(document).ready( function() {
 	
-	//Validação Cadastro de Cliente
+	//Validaï¿½ï¿½o Cadastro de Cliente
 	
 	$("#NewClient").validate({
 		// Define as regras
@@ -141,7 +139,7 @@ $(document).ready( function() {
 				minlength: 14
 			},
 			campoMensagem:{
-				// campoMensagem será obrigatório (required) e terá tamanho mínimo (minLength)
+				// campoMensagem serï¿½ obrigatï¿½rio (required) e terï¿½ tamanho mï¿½nimo (minLength)
 				required: true, minlength: 2
 			}
 		},
@@ -149,12 +147,12 @@ $(document).ready( function() {
 		messages:{
 			Usuario:{
 				required: "Digite o seu Usuario",
-				minlength: "O seu usuario deve conter, no mínimo, 5 caracteres"
+				minlength: "O seu usuario deve conter, no mï¿½nimo, 5 caracteres"
 			},
 			
 			Senha:{
 				required: "Digite o sua Senha",
-				minlength: "O seu usuario deve conter, no mínimo, 6 caracteres"
+				minlength: "O seu usuario deve conter, no mï¿½nimo, 6 caracteres"
 			},
 			
 			RepitaSenha:{
@@ -164,21 +162,21 @@ $(document).ready( function() {
 			
 			NomeCompleto:{
 				required: "Digite o seu Nome Completo",
-				minlength: "O seu nome deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu nome deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Telefone:{
 				required: "Digite o seu Telefone",
-				minlength: "O seu Telefone deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu Telefone deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Celular:{
 				required: "Digite o seu Celular",
-				minlength: "O seu Celular deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu Celular deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Endereco:{
-				required: "Digite o seu Endereço"
+				required: "Digite o seu Endereï¿½o"
 				
 			},
 			
@@ -194,7 +192,7 @@ $(document).ready( function() {
 			
 			Cep:{
 				required: "Digite o seu CEP",
-				minlength: "O seu CEP deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu CEP deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Estado:{
@@ -209,36 +207,36 @@ $(document).ready( function() {
 			
 			Email:{
 				required: "Digite o seu e-mail para contato",
-				email: "Digite um e-mail válido"
+				email: "Digite um e-mail vï¿½lido"
 			},
 			
 			DataNascimento:{
 				required: "Digite o sua data de nascimento",
-				minlength: "a Sua data de nascimento deve conter, no mínimo, 10 caracteres, dd/mm/aaaa."
+				minlength: "a Sua data de nascimento deve conter, no mï¿½nimo, 10 caracteres, dd/mm/aaaa."
 			},
 			
 			Rg:{
 				required: "Digite o seu rg",
-				minlength: "O seu RG deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu RG deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Cpf:{
 				required: "Digite o seu CPF",
-				minlength: "O seu CPF deve conter, no mínimo, 11 caracteres"
+				minlength: "O seu CPF deve conter, no mï¿½nimo, 11 caracteres"
 			},
 			
 			Cnjp:{
 				required: "Digite o seu CNPJ",
-				minlength: "O seu CEP deve conter, no mínimo, 14 caracteres"
+				minlength: "O seu CEP deve conter, no mï¿½nimo, 14 caracteres"
 			},
 			campoMensagem:{
 				required: "Digite a sua mensagem",
-				minlength: "A sua mensagem deve conter, no mínimo, 2 caracteres"
+				minlength: "A sua mensagem deve conter, no mï¿½nimo, 2 caracteres"
 			}
 		}
 	});
 	
-	//Validação Cadastro de Funcionario
+	//Validaï¿½ï¿½o Cadastro de Funcionario
 	
 	$("#NewFunc").validate({
 		// Define as regras
@@ -329,7 +327,7 @@ $(document).ready( function() {
 				minlength: 14
 			},
 			campoMensagem:{
-				// campoMensagem será obrigatório (required) e terá tamanho mínimo (minLength)
+				// campoMensagem serï¿½ obrigatï¿½rio (required) e terï¿½ tamanho mï¿½nimo (minLength)
 				required: true, minlength: 2
 			}
 		},
@@ -337,12 +335,12 @@ $(document).ready( function() {
 		messages:{
 			Usuario:{
 				required: "Digite o seu Usuario",
-				minlength: "O seu usuario deve conter, no mínimo, 5 caracteres"
+				minlength: "O seu usuario deve conter, no mï¿½nimo, 5 caracteres"
 			},
 			
 			Senha:{
 				required: "Digite o sua Senha",
-				minlength: "O seu usuario deve conter, no mínimo, 6 caracteres"
+				minlength: "O seu usuario deve conter, no mï¿½nimo, 6 caracteres"
 			},
 			
 			RepitaSenha:{
@@ -352,21 +350,21 @@ $(document).ready( function() {
 			
 			NomeCompleto:{
 				required: "Digite o seu Nome Completo",
-				minlength: "O seu nome deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu nome deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Telefone:{
 				required: "Digite o seu Telefone",
-				minlength: "O seu Telefone deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu Telefone deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Celular:{
 				required: "Digite o seu Celular",
-				minlength: "O seu Celular deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu Celular deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Endereco:{
-				required: "Digite o seu Endereço"
+				required: "Digite o seu Endereï¿½o"
 				
 			},
 			
@@ -382,7 +380,7 @@ $(document).ready( function() {
 			
 			Cep:{
 				required: "Digite o seu CEP",
-				minlength: "O seu CEP deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu CEP deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Estado:{
@@ -397,33 +395,33 @@ $(document).ready( function() {
 			
 			Email:{
 				required: "Digite o seu e-mail para contato",
-				email: "Digite um e-mail válido"
+				email: "Digite um e-mail vï¿½lido"
 			},
 			
 			DataNascimento:{
 				required: "Digite o sua data de nascimento",
-				minlength: "a Sua data de nascimento deve conter, no mínimo, 10 caracteres, dd/mm/aaaa."
+				minlength: "a Sua data de nascimento deve conter, no mï¿½nimo, 10 caracteres, dd/mm/aaaa."
 			},
 			
 			Rg:{
 				required: "Digite o seu rg",
-				minlength: "O seu RG deve conter, no mínimo, 10 caracteres"
+				minlength: "O seu RG deve conter, no mï¿½nimo, 10 caracteres"
 			},
 			
 			Cpf:{
 				required: "Digite o seu CPF",
-				minlength: "O seu CPF deve conter, no mínimo, 11 caracteres"
+				minlength: "O seu CPF deve conter, no mï¿½nimo, 11 caracteres"
 			},
 			
 			Cnjp:{
 				required: "Digite o seu CNPJ",
-				minlength: "O seu CEP deve conter, no mínimo, 14 caracteres"
+				minlength: "O seu CEP deve conter, no mï¿½nimo, 14 caracteres"
 			}
 			}
 		
 	});
 	
-	//Validação Cadastro de Produto
+	//Validaï¿½ï¿½o Cadastro de Produto
 	
 	$("#NewFunc").validate({
 		// Define as regras
@@ -455,7 +453,7 @@ $(document).ready( function() {
 			
 			SiglaProduto:{
 				required: "Digite Sigla do Produto",
-				minlength: "Sua sigla deve conter, no mínimo, 2 caracteres"
+				minlength: "Sua sigla deve conter, no mï¿½nimo, 2 caracteres"
 			},
 			
 			IMGProduto:{
@@ -468,7 +466,7 @@ $(document).ready( function() {
 		
 	});
 	
-//Validação Cadastro de Ticket
+//Validaï¿½ï¿½o Cadastro de Ticket
 	
 	$("#NewFunc").validate({
 		// Define as regras
@@ -483,7 +481,7 @@ $(document).ready( function() {
 		// Define as mensagens de erro para cada regra
 		messages:{
 			DescricaoTicket:{
-				required: "Digite uma descrição para este Ticket!!!"
+				required: "Digite uma descriï¿½ï¿½o para este Ticket!!!"
 				
 			}
 			
@@ -495,4 +493,4 @@ $(document).ready( function() {
 	});
 	
 });
->>>>>>> 6b367e763cecda902c8fb4596fe6e11ed7459c8f
+
