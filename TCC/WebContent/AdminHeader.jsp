@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
   <link href="css/application.css" media="all" rel="stylesheet" type="text/css" />
   <script src="js/application.js" type="text/javascript"></script>
+  <script type="text/javascript" src="maskedinput.js"></script>
 
   <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
