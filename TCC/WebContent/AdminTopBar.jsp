@@ -1,6 +1,6 @@
 <div class="top-bar">
   <a id="topbar-brand" class="brand" href="#">
-    Administracao Sistemas de Tickets
+    Administração JTicket Master
   </a>
   <ul class="top-notifications">
     <li class="dropdown">

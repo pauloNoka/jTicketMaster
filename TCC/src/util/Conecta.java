@@ -7,8 +7,8 @@ import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 
 public class Conecta {
 	private final static String USER="sa";
-	private final static String PASSWD="pauloeli";
-	private final static String IP_SERVER="127.0.0.1";
+	private final static String PASSWD="123456";
+	private final static String IP_SERVER="VAGNER-PC";
 	private final static String INSTANCIA="SQLEXPRESS";
 	private final static String DB="TicketMaster";
 	

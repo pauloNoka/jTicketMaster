@@ -6,6 +6,7 @@
   <title>Administracao - Tickets</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
   <link href="css/application.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="js/app.js" type="text/javascript"></script>
   <script src="js/application.js" type="text/javascript"></script>
   <script type="text/javascript" src="maskedinput.js"></script>
 

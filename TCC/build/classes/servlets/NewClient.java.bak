@@ -115,7 +115,7 @@ public class NewClient extends HttpServlet {
 		String success = "cliente inserido com sucesso!";
 		request.setAttribute("success", success);
 		request.getRequestDispatcher("ListClient").forward(request, response);
-		
+
 	}
 
 }

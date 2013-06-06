@@ -40,7 +40,7 @@
     </li>
 
     <!-- Inicio -->
-    <li class="active">
+    <li class="">
       <a href="index.jsp">
           <span class="icon">
             <i class="icon-dashboard"></i>
@@ -72,7 +72,7 @@
           </a>
         </li>
         <li class="">
-          <a href="ListClient.jsp">
+          <a href="ListClient">
               Listar
           </a>
         </li>
